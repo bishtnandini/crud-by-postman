@@ -4,6 +4,7 @@ const app= express();
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import route from "../crud/router/userroute.js"
+
 dotenv.config();
 
 
@@ -30,5 +31,6 @@ async function main(){
 
 
 app.use("/api/user",route);
+
 
 
